@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./cssmasinfo.css">
+    <link rel="shortcut icon" href="static\image\logo.png" type="image/x-icon">
+    <title>Mas Información</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        text-align: center;
+    }
+
+
+    body {
+        background: linear-gradient(#001678, #9e0000);
+        font-family: poppins;
+    }
+
+    .masinformacion {
+        color: #ffffff;
+        align-items: center;
+    }
+
+    .caja {
+        border: 3px solid rgb(255, 255, 255);
+        padding: 2px;
+        margin: 80px 230px;
+        border-radius: 34px;
+        text-align: center;
+    }
+
+    @keyframes bounce {
+
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+            transform: translateY(0);
+        }
+
+        40% {
+            transform: translateY(-15px);
+        }
+
+        60% {
+            transform: translateY(-5px);
+        }
+    }
+
+    .caja img {
+        max-width: 7%;
+        max-height: 7%;
+        padding-top: 30px;
+        animation: bounce 2s;
+    }
+
+
+    .masinformacion h2 {
+        padding: 17px;
+        text-transform: uppercase;
+    }
+
+    .masinformacion p {
+        padding-left: 70px;
+        padding-right: 70px;
+        padding-bottom: 40px;
+    }
+
+    .link {
+        display: inline-block;
+        color: #ffffff;
+        background-color: #000000;
+        padding: 10px 20px;
+        border: 3px solid #000000;
+        border-radius: 30px;
+        margin-top: -20px;
+        margin-bottom: 60px;
+        text-transform: uppercase;
+    }
+
+    a {
+        display: inline-block;
+        color: #ffffff;
+    }
+</style>
+
+<body>
+    <section class="masinformacion">
+        <div class="caja">
+            <img src="static\image\lsalogo.png" alt="lsa">
+            <h2>Lengua de señas argentina</h2>
+            <p>La Lengua de Señas Argentina (LSA) es una LENGUA compleja y completa, distinta del español. Tiene el
+                mismo status que cualquier lengua hablada en el mundo, con sus propias reglas gramaticales y léxico. Los
+                hablantes naturales de esta lengua son las personas Sordas que pertenecen a la comunidad Sorda
+                argentina.
+                <br>
+                <br>Debido a que la LSA es la lengua natural hablada por los Sordos argentinos, el Estado Nacional tiene
+                la obligación de conservarlo y promoverlo adecuadamente y de la manera más eficaz.
+                <br>
+                <br><a
+                    href="https://www.argentina.gob.ar/justicia/derechofacil/leysimple/discapacidad/lengua-de-senas-argentina"><b>Ley
+                        27.710</b></a>
+            </p>
+        </div>
+        <div class="caja">
+            <img src="static\image\nosotros.png" alt="">
+            <h2>Sobre nuestro proyecto</h2>
+            <p>“Señalando al futuro” tiene como objetivo principal la traducción de palabras a lengua de señas. Esta
+                iniciativa surge con la intención de facilitar la comunicación para las personas sordas, quienes
+                enfrentan barreras significativas debido a la falta de comprensión generalizada de su lengua. La idea es
+                proporcionar una herramienta accesible y útil que permita a cualquier persona ingresar una palabra y
+                recibir su traducción en tiempo real a través de un formato visual comprensible.
+            </p>
+        </div>
+        <div class="caja">
+            <img src="static\image\agrad - copia.png" alt="">
+            <h2>Agradecimientos</h2>
+            <p>El diseño y desarrollo de este sistema no hubiera sido posible sin la invaluable colaboración de miembros
+                destacados de la comunidad sorda de San Pedro de Jujuy. Su participación activa y sus aportes han sido
+                fundamentales para entender las necesidades específicas de los usuarios finales y para asegurar que el
+                sistema sea verdaderamente inclusivo y funcional.
+                <br>
+                <br>Asimismo, el apoyo y la guía del intérprete Enzo han sido cruciales en el proceso de desarrollo,
+                facilitando la comunicación efectiva entre el equipo de trabajo y la comunidad sorda. Su experiencia y
+                conocimiento han enriquecido el proyecto, garantizando que las soluciones propuestas sean apropiadas y
+                relevantes para el contexto específico de los usuarios.
+                <br>
+                <br>La implementación de este sistema representa un paso significativo hacia la inclusión y el acceso
+                equitativo a la información para la comunidad sorda, promoviendo así una sociedad más igualitaria y
+                respetuosa de la diversidad lingüística y cultural.
+            </p>
+        </div>
+    </section>
+    <a class="link" href="{{ url_for('index') }}"><b>Volver al traductor</b></a>
+</body>
+
+</html>

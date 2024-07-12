@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar GIF</title>
+</head>
+<body>
+    <h1>GIF</h1>
+    <form action="/buscar_gif" method="POST">
+        <label for="gifName">Nombre:</label>
+        <input type="text" id="gifName" name="gifName">
+        <button type="submit">Buscar</button>
+    </form>
+    {% if gif %}
+      <img src="{{ gif }}" alt="GIF">
+    {% endif %}
+    {% if error_message %}
+        <p>{{ error_message }}</p>
+    {% endif %}
+</body>
+</html>
